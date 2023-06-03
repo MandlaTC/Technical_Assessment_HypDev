@@ -1,28 +1,29 @@
 # Technical_Assessment_HypDev
 
-## Magic Squares 
+# Magic Squares 
 This Magic Square function is a simple Python function that generates a magic square of a specified size. A magic square is a square grid filled with distinct positive integers, where the sums of the numbers in each row, each column, and diagonals are equal.
 
-## Demo App
+# Demo App
 Chess Game visualiser. This app stores .pgn files of chess grandmasters in dropbox using the Dropbox API and allows you to see their latest games visualised with SVGs amd the chess library.
 
 ## TODO 
-    Allow searching of games 
-    Stylising the site 
-    Run games through chess engine for analysis
-    Deletion of .pgn files 
+- Allow searching of games 
+- Stylising the site 
+- Run games through chess engine for analysis
+- Deletion of .pgn files 
 
 Installation
 
 To install and run the Chess App locally, follow these steps:
 
-    Clone the repository from GitHub:
+- Clone the repository from GitHub:
 
 ```shell
 
 $ git clone https://github.com/your-username/chess-app.git
 ```
-    Navigate to the project directory:
+
+- Navigate to the project directory:
 
 
 
@@ -30,26 +31,29 @@ $ git clone https://github.com/your-username/chess-app.git
 
 $ cd chess-app
 ```
-    Set up a virtual environment (optional but recommended):
+
+- Set up a virtual environment (optional but recommended):
 
 ```shell
 
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
-    Install the required dependencies:
+- Install the required dependencies:
 ```shell
 $ pip install -r requirements.txt
 ```
-    Set up a Dropbox app and obtain an access token:
-        Create a new app on the Dropbox App Console.
-        Generate an access token for your app.
+- Set up a Dropbox app and obtain an access token:
+- - Create a new app on the Dropbox App Console.
+- -  Generate an access token for your app.
 
-    Configure the app:
-        Rename the config.example.py file to config.py.
-        Open config.py and replace the placeholder YOUR_DROPBOX_ACCESS_TOKEN with your actual Dropbox access token.
+- Configure the app:
+    DROPBOX_KEY="******"
+    UPLOAD_FOLDER = './temp'
+    DELETE_FOLDER = '/temp'
+    ALLOWED_EXTENSIONS = {'pgn'}
 
-    Start the application:
+Start the application:
 
 ```shell
 
