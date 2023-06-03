@@ -48,6 +48,7 @@ $ pip install -r requirements.txt
 - -  Generate an access token for your app.
 
 - Configure the app:
+
 ```
 DROPBOX_KEY="******"
 UPLOAD_FOLDER = './temp'
@@ -55,13 +56,13 @@ DELETE_FOLDER = '/temp'
 ALLOWED_EXTENSIONS = {'pgn'}
 ```
 
-Start the application:
+- Start the application:
 
 ```shell
 
 $ flask run
 ```
-    Open your web browser and visit http://localhost:5000 to access the Chess App.
+- Open your web browser and visit http://localhost:5000 to access the Chess App.
 
 ### Technologues Used 
 The Chess App is built using the following technologies:
