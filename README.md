@@ -50,6 +50,7 @@ $ pip install -r requirements.txt
 - Configure the app:
 
 ```
+# .env
 DROPBOX_KEY="******"
 UPLOAD_FOLDER = './temp'
 DELETE_FOLDER = '/temp'
@@ -81,7 +82,7 @@ This Chess App is released under the MIT License.
 The Chess App was inspired by the love for chess and the desire to create an accessible and enjoyable way to play and record games. Special thanks to the developers of Flask, chess library, and the Dropbox API for their excellent tools and documentation.
 
 
-## Tell us what you consider important in software development.
+# Tell us what you consider important in software development.
 
 
 Write three or four paragraphs about how you would develop a good web API. Talk about the process you would follow from idea to release, the tools you would use, and the problems you would need to solve. You could talk about scalability, authorization, design, discoverability, and/or anything you think is important.
