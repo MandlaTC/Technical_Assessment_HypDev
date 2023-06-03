@@ -48,10 +48,12 @@ $ pip install -r requirements.txt
 - -  Generate an access token for your app.
 
 - Configure the app:
-    DROPBOX_KEY="******"
-    UPLOAD_FOLDER = './temp'
-    DELETE_FOLDER = '/temp'
-    ALLOWED_EXTENSIONS = {'pgn'}
+```
+DROPBOX_KEY="******"
+UPLOAD_FOLDER = './temp'
+DELETE_FOLDER = '/temp'
+ALLOWED_EXTENSIONS = {'pgn'}
+```
 
 Start the application:
 
