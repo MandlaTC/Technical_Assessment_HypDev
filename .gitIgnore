@@ -1,1 +1,3 @@
 .vscode
+/demo_app/.env
+__pycache__

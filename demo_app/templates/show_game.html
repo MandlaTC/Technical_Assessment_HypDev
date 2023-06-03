@@ -1,0 +1,72 @@
+<title>Show Game</title>
+
+<head>
+
+    <style>
+        [data-component="slideshow"] .slide {
+            display: none;
+            text-align: center;
+        }
+
+        [data-component="slideshow"] .slide.active {
+            display: block;
+        }
+    </style>
+</head>
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='slideshow.css') }}">
+<script src="{{url_for('static', filename='slideshow.js')}}"></script> -->
+
+
+
+
+<body>
+
+    <!-- 
+{% for your_list_element in svgs %}
+{{your_list_element}}
+{% endfor %} -->
+
+
+    <h1>Event: {{game.headers["Event"]}}</h1>
+    <h1>Site: {{game.headers["Site"]}}</h1>
+    <h1>Date: {{game.headers["Date"]}}</h1>
+    <h1>Round: {{game.headers["Round"]}}</h1>
+    <h1>White: {{game.headers["White"]}}</h1>
+    <h1>Black: {{game.headers["Black"]}}</h1>
+    <div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+            {% for s in svgs%}
+            <div class="slide">
+                {{s}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <script>
+
+        var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+        slideshows.forEach(initSlideShow);
+
+        function initSlideShow(slideshow) {
+
+            var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+            var index = 0, time = 1000;
+            slides[index].classList.add('active');
+
+            setInterval(() => {
+                slides[index].classList.remove('active');
+
+                index++;
+                if (index === slides.length) index = 0;
+
+                slides[index].classList.add('active');
+
+            }, time);
+        }
+    </script>
+</body>
